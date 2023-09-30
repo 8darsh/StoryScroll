@@ -9,14 +9,14 @@ import Foundation
 
 struct BookModel: Codable{
     
-    var items: [volume]
+    var items: [volume]!
 }
 struct volume: Codable{
-    var volumeInfo: volumeInfo
+    var volumeInfo: volumeInformation
     var saleInfo: buyLink
     var accessInfo: pdf?
 }
-struct volumeInfo: Codable{
+struct volumeInformation: Codable{
     
     var title: String?
     var authors:[String]?

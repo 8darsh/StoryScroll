@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D216E0A72AC7E202007D253B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D216E0A62AC7E202007D253B /* Kingfisher */; };
+		D216E0A92AC7E292007D253B /* UIimage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D216E0A82AC7E292007D253B /* UIimage + Extension.swift */; };
+		D2274CAE2AC8433D00150D81 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2274CAD2AC8433D00150D81 /* HomeViewController.swift */; };
+		D2274CB02AC8490D00150D81 /* BooksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2274CAF2AC8490D00150D81 /* BooksTableViewCell.swift */; };
 		D26F05982AC6895E0061FACE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F05972AC6895E0061FACE /* AppDelegate.swift */; };
 		D26F059A2AC6895E0061FACE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F05992AC6895E0061FACE /* SceneDelegate.swift */; };
 		D26F059F2AC6895E0061FACE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26F059D2AC6895E0061FACE /* Main.storyboard */; };
@@ -19,10 +23,12 @@
 		D26F05BF2AC68FCE0061FACE /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F05BE2AC68FCE0061FACE /* ApiManager.swift */; };
 		D26F05C52AC692920061FACE /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F05C42AC692920061FACE /* BookModel.swift */; };
 		D26F05C72AC697B60061FACE /* BooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F05C62AC697B60061FACE /* BooksViewModel.swift */; };
-		D26F05C92AC69B740061FACE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F05C82AC69B740061FACE /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D216E0A82AC7E292007D253B /* UIimage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIimage + Extension.swift"; sourceTree = "<group>"; };
+		D2274CAD2AC8433D00150D81 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D2274CAF2AC8490D00150D81 /* BooksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewCell.swift; sourceTree = "<group>"; };
 		D26F05942AC6895E0061FACE /* StoryScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26F05972AC6895E0061FACE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D26F05992AC6895E0061FACE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +43,6 @@
 		D26F05BE2AC68FCE0061FACE /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		D26F05C42AC692920061FACE /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		D26F05C62AC697B60061FACE /* BooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewModel.swift; sourceTree = "<group>"; };
-		D26F05C82AC69B740061FACE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,12 +50,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D216E0A72AC7E202007D253B /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2274CAC2AC8430500150D81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2274CAD2AC8433D00150D81 /* HomeViewController.swift */,
+				D2274CAF2AC8490D00150D81 /* BooksTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D26F058B2AC6895E0061FACE = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +119,7 @@
 		D26F05B02AC68A9D0061FACE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D216E0A82AC7E292007D253B /* UIimage + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -154,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				D26F05C32AC6926D0061FACE /* Model */,
-				D26F05C22AC692660061FACE /* View */,
 				D26F05C12AC6925B0061FACE /* viewModel */,
 			);
 			path = Books;
@@ -168,18 +183,11 @@
 			path = viewModel;
 			sourceTree = "<group>";
 		};
-		D26F05C22AC692660061FACE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D26F05C82AC69B740061FACE /* ViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		D26F05C32AC6926D0061FACE /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				D26F05C42AC692920061FACE /* BookModel.swift */,
+				D2274CAC2AC8430500150D81 /* View */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,6 +208,9 @@
 			dependencies = (
 			);
 			name = StoryScroll;
+			packageProductDependencies = (
+				D216E0A62AC7E202007D253B /* Kingfisher */,
+			);
 			productName = StoryScroll;
 			productReference = D26F05942AC6895E0061FACE /* StoryScroll.app */;
 			productType = "com.apple.product-type.application";
@@ -228,6 +239,9 @@
 				Base,
 			);
 			mainGroup = D26F058B2AC6895E0061FACE;
+			packageReferences = (
+				D216E0A52AC7E202007D253B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D26F05952AC6895E0061FACE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -255,14 +269,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D26F05C92AC69B740061FACE /* ViewController.swift in Sources */,
+				D2274CB02AC8490D00150D81 /* BooksTableViewCell.swift in Sources */,
 				D26F05A22AC6895E0061FACE /* StoryScroll.xcdatamodeld in Sources */,
 				D26F05982AC6895E0061FACE /* AppDelegate.swift in Sources */,
 				D26F05BD2AC68CF40061FACE /* DataEndPoint.swift in Sources */,
 				D26F05BF2AC68FCE0061FACE /* ApiManager.swift in Sources */,
+				D2274CAE2AC8433D00150D81 /* HomeViewController.swift in Sources */,
 				D26F059A2AC6895E0061FACE /* SceneDelegate.swift in Sources */,
 				D26F05BB2AC68CDC0061FACE /* EndPointType.swift in Sources */,
 				D26F05C52AC692920061FACE /* BookModel.swift in Sources */,
+				D216E0A92AC7E292007D253B /* UIimage + Extension.swift in Sources */,
 				D26F05C72AC697B60061FACE /* BooksViewModel.swift in Sources */,
 				D26F05B82AC68C1B0061FACE /* Constant.swift in Sources */,
 			);
@@ -487,6 +503,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D216E0A52AC7E202007D253B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D216E0A62AC7E202007D253B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D216E0A52AC7E202007D253B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D26F05A02AC6895E0061FACE /* StoryScroll.xcdatamodeld */ = {

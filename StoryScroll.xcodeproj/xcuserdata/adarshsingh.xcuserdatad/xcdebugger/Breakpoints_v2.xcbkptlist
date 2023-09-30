@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "83510F4E-DD02-4E32-83B9-68AD798553E5"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "01DF933C-00EA-4E21-8143-BDD898709279"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StoryScroll/Scenes/Books/Model/View/BooksTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "BooksTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "01DF933C-00EA-4E21-8143-BDD898709279 - e3c64bef550a5b4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryScroll.BooksTableViewCell.author.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "StoryScroll"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adarshsingh/Desktop/Swift/StoryScroll/StoryScroll/Scenes/Books/Model/View/BooksTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "01DF933C-00EA-4E21-8143-BDD898709279 - 2cd26e39d3847759"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryScroll.BooksTableViewCell.author.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "StoryScroll"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adarshsingh/Desktop/Swift/StoryScroll/StoryScroll/Scenes/Books/Model/View/BooksTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "01DF933C-00EA-4E21-8143-BDD898709279 - b147f8633e2c389d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryScroll.BooksTableViewCell.author.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "StoryScroll"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adarshsingh/Desktop/Swift/StoryScroll/StoryScroll/Scenes/Books/Model/View/BooksTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "01DF933C-00EA-4E21-8143-BDD898709279 - 948955c3eccc8470"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryScroll.BooksTableViewCell.author.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "StoryScroll"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adarshsingh/Desktop/Swift/StoryScroll/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "01DF933C-00EA-4E21-8143-BDD898709279 - 5de8463bcdb605c0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryScroll.BooksTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; StoryScroll.BooksTableViewCell"
+                  moduleName = "StoryScroll"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adarshsingh/Desktop/Swift/StoryScroll/StoryScroll/Scenes/Books/Model/View/BooksTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "01DF933C-00EA-4E21-8143-BDD898709279 - 66e48e15d4a52061"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryScroll.BooksTableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;StoryScroll.BooksTableViewCell&gt;"
+                  moduleName = "StoryScroll"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adarshsingh/Desktop/Swift/StoryScroll/StoryScroll/Scenes/Books/Model/View/BooksTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7AB06CCF-F063-455D-B9F6-C55B568554B5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StoryScroll/Scenes/Books/Model/View/BooksTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "awakeFromNib()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7AB06CCF-F063-455D-B9F6-C55B568554B5 - 6959bdc875e05e90"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryScroll.BooksTableViewCell.awakeFromNib() -&gt; ()"
+                  moduleName = "StoryScroll"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adarshsingh/Desktop/Swift/StoryScroll/StoryScroll/Scenes/Books/Model/View/BooksTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "7AB06CCF-F063-455D-B9F6-C55B568554B5 - 6959bdc875e05e90"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryScroll.BooksTableViewCell.awakeFromNib() -&gt; ()"
+                  moduleName = "StoryScroll"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adarshsingh/Desktop/Swift/StoryScroll/StoryScroll/Scenes/Books/Model/View/BooksTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
