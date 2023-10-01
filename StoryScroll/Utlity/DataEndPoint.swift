@@ -17,7 +17,11 @@ extension DataEndPoint:EndPointType{
     var path: String {
         switch self {
         case .books(searchString: let searchString):
-            return "flowers&filter=free-ebooks&key=AIzaSyAPCE3PhlZywojNWxXVq9ssoepOTH6eN3M"
+            if searchString == ""{
+                return "war&filter=free-ebooks&key=AIzaSyAPCE3PhlZywojNWxXVq9ssoepOTH6eN3M"
+            }else{
+                return "\(searchString)&filter=free-ebooks&key=AIzaSyAPCE3PhlZywojNWxXVq9ssoepOTH6eN3M"
+            }
         }
     }
     

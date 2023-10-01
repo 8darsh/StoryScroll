@@ -123,6 +123,31 @@
             </objects>
             <point key="canvasLocation" x="270.99236641221376" y="-518.30985915492965"/>
         </scene>
+        <!--Book Preview View Controller-->
+        <scene sceneID="myN-Wc-XUy">
+            <objects>
+                <viewController storyboardIdentifier="BookPreviewViewController" id="UsJ-LV-GuA" customClass="BookPreviewViewController" customModule="StoryScroll" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2it-0C-KRk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="gEQ-W7-2RJ">
+                                <rect key="frame" x="186" y="328" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OnB-V5-lyp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uht-0y-ZvX"/>
+                    <connections>
+                        <outlet property="loading" destination="gEQ-W7-2RJ" id="JVe-us-mgi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O2z-aO-fsw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1979.3893129770991" y="-518.30985915492965"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="XCZ-UV-wMR">
             <objects>
@@ -140,6 +165,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4J3-sd-cll" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-655.72519083969462" y="-518.30985915492965"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8pN-Vd-Yhx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IcU-aG-q5I" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GdS-Md-qWa">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UsJ-LV-GuA" kind="relationship" relationship="rootViewController" id="Z9k-5M-vxt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwT-aE-Qm5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.6717557251909" y="-518.30985915492965"/>
         </scene>
     </scenes>
     <resources>

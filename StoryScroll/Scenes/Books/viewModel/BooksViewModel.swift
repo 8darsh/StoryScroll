@@ -6,14 +6,15 @@
 //
 
 import Foundation
-
+import UIKit
 final class BooksViewModel{
     
     var books: BookModel?
     var eventHandler:((_ event: Event)->Void)?
     func fetchdata(){
         self.eventHandler?(.loading)
-        ApiManager.shared.request(modelType: BookModel.self, type: DataEndPoint.books(searchString: "flower")) { response in
+        let searchQuery = ApiManager.shared.searchQuery
+        ApiManager.shared.request(modelType: BookModel.self, type: DataEndPoint.books(searchString: searchQuery)) { response in
             self.eventHandler?(.stopLoading)
             switch response{
                 

@@ -17,9 +17,19 @@ enum DataError:Error{
 typealias Handler<T> = (Result<T, DataError>)->Void
 
 class ApiManager:Codable{
-    
+    public var searchQuery: String = ""
     static let shared = ApiManager()
     init(){}
+    
+    func updateSearchQuery(query: String, completion: @escaping Handler<BookModel>) {
+        // Create an endpoint or URL based on the search query
+        searchQuery = query
+        let searchEndPoint = DataEndPoint.books(searchString: query)
+        
+        
+        // Call the request function to perform the search
+        request(modelType: BookModel.self, type:searchEndPoint, completion: completion)
+    }
     
     func request<T: Codable>(
     

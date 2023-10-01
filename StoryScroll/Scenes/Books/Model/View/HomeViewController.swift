@@ -7,22 +7,50 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UISearchControllerDelegate, UISearchBarDelegate {
+ 
+    
     
     var viewModel = BooksViewModel()
+    
 
     @IBOutlet var tableView: UITableView!
-    
+    var completion: (([String:String])->Void?)?
+    let search = UISearchController(searchResultsController: nil)
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        searchBarSetup()
+        tableView.layer.cornerRadius = 20
         configuration()
+        
     }
-    override func viewWillAppear(_ animated: Bool) {
-        viewModel.fetchdata()
-        self.tableView.reloadData()
+    private func searchBarSetup(){
+        
+        search.searchBar.delegate = self
+        navigationItem.searchController = search
     }
+}
+extension HomeViewController{
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        // Call the APIManager to update the search query
+        ApiManager.shared.updateSearchQuery(query: searchText) { result in
+            switch result {
+                case .success(let data):
+                    // Handle and display the search results in your UI
+                self.viewModel.books = data
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+                case .failure(let error):
+                    // Handle the error, e.g., show an error message to the user
+                    print("API Error: \(error)")
+            }
+        }
+    }
+    
 }
 extension HomeViewController{
     
@@ -71,15 +99,20 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! BooksTableViewCell
         
         let books = viewModel.books?.items[indexPath.row]
+        cell.books = books
         cell.author?.text = books?.volumeInfo.authors?[0]
         cell.bookTitle?.text = books?.volumeInfo.title
         cell.genre?.text = books?.volumeInfo.categories?[0]
         cell.bookImage.setImage(with: books?.volumeInfo.imageLinks?.smallThumbnail ?? "hehe")
         cell.layer.cornerRadius = 20
-    
-
-        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "BookPreviewViewController") as! BookPreviewViewController
+        let books = viewModel.books?.items[indexPath.row]
+        vc.books = books
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

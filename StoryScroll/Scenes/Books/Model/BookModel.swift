@@ -37,6 +37,7 @@ struct buyLink: Codable{
 
 struct pdf: Codable{
     var pdf:pdfDownload
+    var webReaderLink: String?
 }
 struct pdfDownload:Codable{
     var downloadLink: String?

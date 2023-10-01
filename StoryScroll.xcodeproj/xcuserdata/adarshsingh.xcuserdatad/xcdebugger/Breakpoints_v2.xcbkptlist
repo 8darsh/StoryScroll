@@ -14,8 +14,8 @@
             filePath = "StoryScroll/Scenes/Books/Model/View/BooksTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "BooksTableViewCell"
             landmarkType = "3">
             <Locations>
@@ -122,8 +122,8 @@
             filePath = "StoryScroll/Scenes/Books/Model/View/BooksTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "awakeFromNib()"
             landmarkType = "7">
             <Locations>
@@ -156,6 +156,130 @@
                   startingLineNumber = "21"
                   endingLineNumber = "21"
                   offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D529969A-B382-456A-9A93-02483721A00C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StoryScroll/Scenes/Books/Model/View/BookPreviewViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "configureWebView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C5E230A-9BA8-451A-955D-EB467490809C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StoryScroll/Scenes/Books/Model/View/BookPreviewViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "BookPreviewViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "4C5E230A-9BA8-451A-955D-EB467490809C - e8a63e3f3893a8d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryScroll.BookPreviewViewController.bookPreview.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "StoryScroll"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adarshsingh/Desktop/Swift/StoryScroll/StoryScroll/Scenes/Books/Model/View/BookPreviewViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "4C5E230A-9BA8-451A-955D-EB467490809C - 190fce9343fc0ce4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryScroll.BookPreviewViewController.bookPreview.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "StoryScroll"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adarshsingh/Desktop/Swift/StoryScroll/StoryScroll/Scenes/Books/Model/View/BookPreviewViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "4C5E230A-9BA8-451A-955D-EB467490809C - e258ac98ec100102"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryScroll.BookPreviewViewController.bookPreview.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "StoryScroll"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adarshsingh/Desktop/Swift/StoryScroll/StoryScroll/Scenes/Books/Model/View/BookPreviewViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "4C5E230A-9BA8-451A-955D-EB467490809C - f5e8fb24f46c465c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryScroll.BookPreviewViewController.bookPreview.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "StoryScroll"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adarshsingh/Desktop/Swift/StoryScroll/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "4C5E230A-9BA8-451A-955D-EB467490809C - 21136b973aa467c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryScroll.BookPreviewViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; StoryScroll.BookPreviewViewController"
+                  moduleName = "StoryScroll"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adarshsingh/Desktop/Swift/StoryScroll/StoryScroll/Scenes/Books/Model/View/BookPreviewViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "4C5E230A-9BA8-451A-955D-EB467490809C - fd9ef4aeb01c388c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoryScroll.BookPreviewViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;StoryScroll.BookPreviewViewController&gt;"
+                  moduleName = "StoryScroll"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adarshsingh/Desktop/Swift/StoryScroll/StoryScroll/Scenes/Books/Model/View/BookPreviewViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "128">
                </Location>
             </Locations>
          </BreakpointContent>
