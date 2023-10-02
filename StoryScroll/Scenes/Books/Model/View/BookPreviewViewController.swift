@@ -22,9 +22,18 @@ class BookPreviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+       
         layoutViews()
         configureWebView()
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        TimerManager.shared.startTimer()
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        TimerManager.shared.stopTimer()
     }
     
     

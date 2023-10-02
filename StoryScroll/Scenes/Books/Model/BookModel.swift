@@ -30,6 +30,7 @@ struct volumeInformation: Codable{
 struct image:Codable{
     
     var smallThumbnail: String
+    var thumbnail: String
 }
 struct buyLink: Codable{
     var buyLink: String

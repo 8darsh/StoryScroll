@@ -6,51 +6,60 @@
 //
 
 import UIKit
+import NotificationCenter
 
 class HomeViewController: UIViewController, UISearchControllerDelegate, UISearchBarDelegate {
- 
+    
     
     
     var viewModel = BooksViewModel()
     
-
+    
     @IBOutlet var tableView: UITableView!
-    var completion: (([String:String])->Void?)?
+    
+    @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet var gifImage: UIImageView!
+    
+    @IBOutlet var timeView: UIView!
     let search = UISearchController(searchResultsController: nil)
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        searchBarSetup()
+        timeView.layer.cornerRadius = 20
+        
         tableView.layer.cornerRadius = 20
         configuration()
         
-    }
-    private func searchBarSetup(){
-        
-        search.searchBar.delegate = self
-        navigationItem.searchController = search
-    }
-}
-extension HomeViewController{
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        // Call the APIManager to update the search query
-        ApiManager.shared.updateSearchQuery(query: searchText) { result in
-            switch result {
-                case .success(let data):
-                    // Handle and display the search results in your UI
-                self.viewModel.books = data
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-                case .failure(let error):
-                    // Handle the error, e.g., show an error message to the user
-                    print("API Error: \(error)")
-            }
+        TimerManager.shared.updateTimerCallback = { [weak self] elapsedTime in
+            self?.updateTimerLabel(elapsedTime)
+//            self!.testParseConnection()
+            
         }
     }
+//    func testParseConnection(){
+//            let myObj = PFObject(className:"FirstClass")
+//            myObj["message"] = "Hey ! First message from Swift. Parse is now connected"
+//            myObj.saveInBackground { (success, error) in
+//                if(success){
+//                    print("You are connected!")
+//                }else{
+//                    print("An error has occurred!")
+//                }
+//            }
+//        }
     
+    override func viewWillAppear(_ animated: Bool) {
+        updateTimerLabel(UserDefaults.standard.double(forKey: "elapsedTime"))
+
+        let gif = UIImage.gifImageWithName("2")
+        gifImage.image = gif?.withHorizontallyFlippedOrientation()
+    }
+
+    func updateTimerLabel(_ elapsedTime: TimeInterval) {
+        let hours = Int(elapsedTime) / 3600
+        let minutes = (Int(elapsedTime) % 3600) / 60
+        let seconds = Int(elapsedTime) % 60
+        timerLabel.text = String(format: "%02d:%02d:%02d", hours, minutes, seconds)
+    }
 }
 extension HomeViewController{
     

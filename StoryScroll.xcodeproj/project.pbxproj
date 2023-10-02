@@ -11,6 +11,11 @@
 		D216E0A92AC7E292007D253B /* UIimage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D216E0A82AC7E292007D253B /* UIimage + Extension.swift */; };
 		D2274CAE2AC8433D00150D81 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2274CAD2AC8433D00150D81 /* HomeViewController.swift */; };
 		D2274CB02AC8490D00150D81 /* BooksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2274CAF2AC8490D00150D81 /* BooksTableViewCell.swift */; };
+		D23EAE4C2ACA779500A0E6C6 /* BookCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23EAE4B2ACA779500A0E6C6 /* BookCollectionViewController.swift */; };
+		D23EAE522ACAE8F900A0E6C6 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23EAE512ACAE8F900A0E6C6 /* TimerManager.swift */; };
+		D23EAE542ACAF60000A0E6C6 /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D23EAE532ACAF60000A0E6C6 /* 1.gif */; };
+		D23EAE562ACAFE7A00A0E6C6 /* 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = D23EAE552ACAFE7900A0E6C6 /* 2.gif */; };
+		D23EAE582ACAFFE400A0E6C6 /* gifImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23EAE572ACAFFE400A0E6C6 /* gifImageLoader.swift */; };
 		D26F05982AC6895E0061FACE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F05972AC6895E0061FACE /* AppDelegate.swift */; };
 		D26F059A2AC6895E0061FACE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F05992AC6895E0061FACE /* SceneDelegate.swift */; };
 		D26F059F2AC6895E0061FACE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26F059D2AC6895E0061FACE /* Main.storyboard */; };
@@ -30,6 +35,11 @@
 		D216E0A82AC7E292007D253B /* UIimage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIimage + Extension.swift"; sourceTree = "<group>"; };
 		D2274CAD2AC8433D00150D81 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D2274CAF2AC8490D00150D81 /* BooksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewCell.swift; sourceTree = "<group>"; };
+		D23EAE4B2ACA779500A0E6C6 /* BookCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewController.swift; sourceTree = "<group>"; };
+		D23EAE512ACAE8F900A0E6C6 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		D23EAE532ACAF60000A0E6C6 /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
+		D23EAE552ACAFE7900A0E6C6 /* 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2.gif; sourceTree = "<group>"; };
+		D23EAE572ACAFFE400A0E6C6 /* gifImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifImageLoader.swift; sourceTree = "<group>"; };
 		D26F05942AC6895E0061FACE /* StoryScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26F05972AC6895E0061FACE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D26F05992AC6895E0061FACE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +75,7 @@
 				D2274CAD2AC8433D00150D81 /* HomeViewController.swift */,
 				D2274CAF2AC8490D00150D81 /* BooksTableViewCell.swift */,
 				D2EF126D2AC9253700468355 /* BookPreviewViewController.swift */,
+				D23EAE4B2ACA779500A0E6C6 /* BookCollectionViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -123,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				D216E0A82AC7E292007D253B /* UIimage + Extension.swift */,
+				D23EAE572ACAFFE400A0E6C6 /* gifImageLoader.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -155,6 +167,8 @@
 		D26F05B42AC68AEE0061FACE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D23EAE552ACAFE7900A0E6C6 /* 2.gif */,
+				D23EAE532ACAF60000A0E6C6 /* 1.gif */,
 				D26F05A32AC689600061FACE /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -165,6 +179,7 @@
 			children = (
 				D26F05BA2AC68CDC0061FACE /* EndPointType.swift */,
 				D26F05BC2AC68CF40061FACE /* DataEndPoint.swift */,
+				D23EAE512ACAE8F900A0E6C6 /* TimerManager.swift */,
 			);
 			path = Utlity;
 			sourceTree = "<group>";
@@ -262,6 +277,8 @@
 				D26F05A72AC689600061FACE /* LaunchScreen.storyboard in Resources */,
 				D26F05A42AC689600061FACE /* Assets.xcassets in Resources */,
 				D26F059F2AC6895E0061FACE /* Main.storyboard in Resources */,
+				D23EAE562ACAFE7A00A0E6C6 /* 2.gif in Resources */,
+				D23EAE542ACAF60000A0E6C6 /* 1.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,16 +292,19 @@
 				D2274CB02AC8490D00150D81 /* BooksTableViewCell.swift in Sources */,
 				D26F05A22AC6895E0061FACE /* StoryScroll.xcdatamodeld in Sources */,
 				D26F05982AC6895E0061FACE /* AppDelegate.swift in Sources */,
+				D23EAE4C2ACA779500A0E6C6 /* BookCollectionViewController.swift in Sources */,
 				D26F05BD2AC68CF40061FACE /* DataEndPoint.swift in Sources */,
 				D26F05BF2AC68FCE0061FACE /* ApiManager.swift in Sources */,
 				D2274CAE2AC8433D00150D81 /* HomeViewController.swift in Sources */,
 				D26F059A2AC6895E0061FACE /* SceneDelegate.swift in Sources */,
+				D23EAE522ACAE8F900A0E6C6 /* TimerManager.swift in Sources */,
 				D2EF126E2AC9253700468355 /* BookPreviewViewController.swift in Sources */,
 				D26F05BB2AC68CDC0061FACE /* EndPointType.swift in Sources */,
 				D26F05C52AC692920061FACE /* BookModel.swift in Sources */,
 				D216E0A92AC7E292007D253B /* UIimage + Extension.swift in Sources */,
 				D26F05C72AC697B60061FACE /* BooksViewModel.swift in Sources */,
 				D26F05B82AC68C1B0061FACE /* Constant.swift in Sources */,
+				D23EAE582ACAFFE400A0E6C6 /* gifImageLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
