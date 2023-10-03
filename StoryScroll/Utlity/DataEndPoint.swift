@@ -13,14 +13,15 @@ enum DataEndPoint{
 }
 
 // https://www.googleapis.com/books/v1/volumes?q=flowers&filter=free-ebooks&key=AIzaSyAPCE3PhlZywojNWxXVq9ssoepOTH6eN3M
+//https://www.googleapis.com/books/v1/volumes?q=three&mistakes&of&my&life&download=epub&key=AIzaSyAPCE3PhlZywojNWxXVq9ssoepOTH6eN3M
 extension DataEndPoint:EndPointType{
     var path: String {
         switch self {
         case .books(searchString: let searchString):
             if searchString == ""{
-                return "war&filter=free-ebooks&key=AIzaSyAPCE3PhlZywojNWxXVq9ssoepOTH6eN3M"
+                return "war&download=epub&key=AIzaSyAPCE3PhlZywojNWxXVq9ssoepOTH6eN3M"
             }else{
-                return "\(searchString)&filter=free-ebooks&key=AIzaSyAPCE3PhlZywojNWxXVq9ssoepOTH6eN3M"
+                return "\(searchString)&key=AIzaSyAPCE3PhlZywojNWxXVq9ssoepOTH6eN3M"
             }
         }
     }

@@ -10,6 +10,6 @@ import Foundation
 enum Constant{
     
     enum Api{
-        static let apiUrl = "https://www.googleapis.com/books/v1/volumes?q=flowers&filter=free-ebooks&key=AIzaSyAPCE3PhlZywojNWxXVq9ssoepOTH6eN3M"
+        static let apiUrl = "https://www.googleapis.com/books/v1/volumes?q=flowers&key=AIzaSyAPCE3PhlZywojNWxXVq9ssoepOTH6eN3M"
     }
 }

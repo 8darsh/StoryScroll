@@ -21,11 +21,13 @@ struct volumeInformation: Codable{
     var title: String?
     var authors:[String]?
     var publishedDate: String?
+    var description: String?
+    var averageRating: Float?
     var pageCount: Int?
     var categories:[String]?
     var imageLinks:image?
     var previewLink: String?
-
+    var infoLink: String?
 }
 struct image:Codable{
     
@@ -33,7 +35,7 @@ struct image:Codable{
     var thumbnail: String
 }
 struct buyLink: Codable{
-    var buyLink: String
+//    var buyLink: String
 }
 
 struct pdf: Codable{
@@ -41,5 +43,7 @@ struct pdf: Codable{
     var webReaderLink: String?
 }
 struct pdfDownload:Codable{
+    var isAvailable: Bool?
     var downloadLink: String?
+    var acsTokenLink: String?
 }

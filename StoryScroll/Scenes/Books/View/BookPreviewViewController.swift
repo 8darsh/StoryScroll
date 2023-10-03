@@ -7,6 +7,7 @@
 
 import UIKit
 import WebKit
+import EPUBKit
 class BookPreviewViewController: UIViewController {
  
     
@@ -27,6 +28,7 @@ class BookPreviewViewController: UIViewController {
         configureWebView()
         
     }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         TimerManager.shared.startTimer()
@@ -40,8 +42,10 @@ class BookPreviewViewController: UIViewController {
     
     func configureWebView(){
 
-        let url = URL(string: (books?.accessInfo?.webReaderLink) ?? "hehe")!
-        webView.load(URLRequest(url: url))
+        let url = URL(string: (books?.accessInfo?.pdf.acsTokenLink) ?? "hehe")!
+        DispatchQueue.main.async{
+            self.webView.load(URLRequest(url: url))
+        }
     }
     
     func layoutViews() {

@@ -6,7 +6,9 @@
 //
 
 import UIKit
-import NotificationCenter
+import Firebase
+import GoogleSignIn
+import FirebaseAuth
 
 class HomeViewController: UIViewController, UISearchControllerDelegate, UISearchBarDelegate {
     
@@ -31,21 +33,11 @@ class HomeViewController: UIViewController, UISearchControllerDelegate, UISearch
         
         TimerManager.shared.updateTimerCallback = { [weak self] elapsedTime in
             self?.updateTimerLabel(elapsedTime)
-//            self!.testParseConnection()
             
         }
+
     }
-//    func testParseConnection(){
-//            let myObj = PFObject(className:"FirstClass")
-//            myObj["message"] = "Hey ! First message from Swift. Parse is now connected"
-//            myObj.saveInBackground { (success, error) in
-//                if(success){
-//                    print("You are connected!")
-//                }else{
-//                    print("An error has occurred!")
-//                }
-//            }
-//        }
+
     
     override func viewWillAppear(_ animated: Bool) {
         updateTimerLabel(UserDefaults.standard.double(forKey: "elapsedTime"))
@@ -118,10 +110,16 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "BookPreviewViewController") as! BookPreviewViewController
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "BookDescriptionViewController") as! BookDescriptionViewController
         let books = viewModel.books?.items[indexPath.row]
         vc.books = books
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    
+}
+extension HomeViewController{
+    
+
 }
 

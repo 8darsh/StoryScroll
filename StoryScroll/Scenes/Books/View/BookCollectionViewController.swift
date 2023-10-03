@@ -48,7 +48,7 @@ class BookCollectionViewController: UITableViewController, UISearchBarDelegate {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "BookPreviewViewController") as! BookPreviewViewController
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "BookDescriptionViewController") as! BookDescriptionViewController
         let books = viewModel.books?.items[indexPath.row]
         vc.books = books
         self.navigationController?.pushViewController(vc, animated: true)
