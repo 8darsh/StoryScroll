@@ -7,7 +7,7 @@
 
 import UIKit
 import WebKit
-
+import SafariServices
 class BookDescriptionViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
     @IBOutlet weak var bookImage: UIImageView!
@@ -24,11 +24,14 @@ class BookDescriptionViewController: UIViewController, WKNavigationDelegate, WKU
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+//        bookDescription.layer.cornerRadius = 20
         setDetails()
 //        layoutViews()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        TimerManager.shared.startTimer()
+        self.bookDescription.layer.cornerRadius = 20
         setDetails()
         if (books?.accessInfo?.pdf.isAvailable)! {
             downloadBtn.isHidden = false
@@ -37,15 +40,26 @@ class BookDescriptionViewController: UIViewController, WKNavigationDelegate, WKU
         }
         
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        TimerManager.shared.stopTimer()
+    }
+    
     
     @IBAction func buyBtnTapped(_ sender: UIButton) {
+//        let url = URL(string: (books?.saleInfo.buyLink) ?? "hehe")!
+//        webView.load(URLRequest(url: url))
+//        webView.uiDelegate = self
+//        webView.allowsBackForwardNavigationGestures = true
+//        webView.allowsLinkPreview = true
+//        webView.navigationDelegate = self
+//        view.addSubview(webView)
+//        if {
+//            UIApplication.shared.open(url)
+//        }
         let url = URL(string: (books?.volumeInfo.infoLink) ?? "hehe")!
-        webView.load(URLRequest(url: url))
-        webView.uiDelegate = self
-        webView.allowsBackForwardNavigationGestures = true
-        webView.allowsLinkPreview = true
-        webView.navigationDelegate = self
-        view.addSubview(webView)
+        let safariViewController = SFSafariViewController(url: url)
+            present(safariViewController, animated: true, completion: nil)
     }
     
     @IBAction func downloadBtnTapped(_ sender: UIButton) {

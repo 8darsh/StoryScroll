@@ -19,7 +19,7 @@ extension DataEndPoint:EndPointType{
         switch self {
         case .books(searchString: let searchString):
             if searchString == ""{
-                return "war&download=epub&key=AIzaSyAPCE3PhlZywojNWxXVq9ssoepOTH6eN3M"
+                return "war&key=AIzaSyAPCE3PhlZywojNWxXVq9ssoepOTH6eN3M"
             }else{
                 return "\(searchString)&key=AIzaSyAPCE3PhlZywojNWxXVq9ssoepOTH6eN3M"
             }

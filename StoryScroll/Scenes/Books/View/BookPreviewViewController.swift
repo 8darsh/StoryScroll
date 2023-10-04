@@ -8,6 +8,7 @@
 import UIKit
 import WebKit
 import EPUBKit
+import SafariServices
 class BookPreviewViewController: UIViewController {
  
     
@@ -42,10 +43,13 @@ class BookPreviewViewController: UIViewController {
     
     func configureWebView(){
 
+//        let url = URL(string: (books?.accessInfo?.pdf.acsTokenLink) ?? "hehe")!
+//        DispatchQueue.main.async{
+//            self.webView.load(URLRequest(url: url))
+//        }
         let url = URL(string: (books?.accessInfo?.pdf.acsTokenLink) ?? "hehe")!
-        DispatchQueue.main.async{
-            self.webView.load(URLRequest(url: url))
-        }
+        let safariViewController = SFSafariViewController(url: url)
+            present(safariViewController, animated: true, completion: nil)
     }
     
     func layoutViews() {

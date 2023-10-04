@@ -35,7 +35,7 @@ struct image:Codable{
     var thumbnail: String
 }
 struct buyLink: Codable{
-//    var buyLink: String
+    var buyLink: String?
 }
 
 struct pdf: Codable{
