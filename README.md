@@ -1,4 +1,3 @@
-# StoryScroll
 StoryScroll an Ebook Library
 
 
