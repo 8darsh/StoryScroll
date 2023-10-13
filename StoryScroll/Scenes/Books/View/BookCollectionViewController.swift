@@ -53,6 +53,9 @@ class BookCollectionViewController: UITableViewController, UISearchBarDelegate {
         vc.books = books
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 127
+    }
         
         
 
